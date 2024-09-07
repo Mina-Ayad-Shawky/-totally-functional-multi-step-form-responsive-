@@ -1,0 +1,298 @@
+body {
+    background: hsl(206, 94%, 87%);
+}
+
+.home {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.parent {
+    width: 57%;
+    /* height: 80%; */
+    height: 501px;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    /* position: relative; */
+    position: absolute;
+    top: 50px;
+    transition: all 0.5s;
+}
+
+.z-index{
+    z-index: 100;
+
+}
+.steps {
+    background-image: url(../images/bg-sidebar-desktop.svg);
+    /* background-size: 100% 100%; */
+    background-position-y: bottom;
+    border-radius: 10px;
+    /* height: 100%; */
+    font-weight: 700;
+    
+}
+
+.cirparent {
+    display: flex;
+    justify-content: start;
+}
+
+.cir {
+    width: 36px;
+    height: 36px;
+    /* padding: 20px; */
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.timeline{
+    background: hsl(206, 94%, 87%);
+}
+
+.a7a1 {
+    font-size: 10px !important;
+    color: #bbb;
+}
+
+.a7a2 {
+    font-weight: 700;
+    font-size: 11px !important;
+}
+
+.forrm {
+    padding-left: 5rem !important;
+    padding-right: 4rem !important;
+}
+
+label {
+    font-size: 12px;
+}
+
+.stbtn {
+    transition: all 0.2s;
+    background: hsl(213, 96%, 18%);
+    font-size: 13px;
+    font-weight: 700;
+    /* right: 30px; */
+    float: right;
+   
+}
+
+.stbtn:hover {
+    background: hsl(243, 100%, 62%) !important;
+    color: white;
+
+}
+
+.red {
+    border: 1px solid red;
+}
+
+.none {
+    display: none;
+}
+
+.monthlyparent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.monthlyparent div {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.switch {
+    font-size: 10px;
+    position: relative;
+    display: inline-block;
+    width: 40px; /* Set the width of the slider to 40px */
+    height: 20px; /* Adjust the height proportionally */
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    border: 2px solid #414141;
+    border-radius: 50px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background: hsl(213, 96%, 18%);
+}
+
+/* The circle inside the slider */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px; /* Adjust the size of the inner circle */
+    width: 16px;
+    left: 0px; /* Adjust position to match the new slider width */
+    bottom: 0px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.switch input:checked + .slider:before {
+    transform: translateX(20px); /* Adjust the translation to move the circle to the right side */
+}
+.hz{
+    border: 0px transparent solid !important;
+}
+
+.switchbg {
+    display: grid;
+    place-items: center;
+    height: 40px;
+    background: #eee;
+}
+.addons-child{
+    border: 1px solid #b4b4b4;
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin-top: 10px !important;   
+    cursor: pointer;
+}
+#checking{
+    width: 15px;
+    /* height: 20px; */
+    
+   
+}
+#checking:checked{
+    background-color: hsl(243, 100%, 62%) !important;
+  }
+  .thanks{
+    display: grid;
+    place-items: center;
+  }
+  .bord{
+    border: 1px solid hsl(243, 100%, 62%) !important;
+    background: hsl(250, 50%, 98%);
+  }
+  .addons-child-border{
+    border: 1px solid hsl(243, 100%, 62%) !important;
+    background: hsl(250, 50%, 98%);
+  }
+  @media(max-width:750px){
+    .home{
+        /* position: relative !important; */
+    }
+    .parent2 , .parent3 , .parent4 , .parent5{
+        /* display: none; */
+    }
+    .parent1{
+        overflow: hidden;
+    }
+    .parent{
+        width: 90%;
+        position: fixed !important;
+        top: 90px;
+        height: auto;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+        /* overflow: hidden; */
+
+    }
+    .steps{
+        display: none;
+    }
+    .hp{
+        color: hsl(213, 96%, 18%);
+        font-weight: 700;
+    }
+    .lables label{
+        color: hsl(213, 96%, 18%);
+    }
+    .forrm{
+        width: 100% !important;
+        padding: 0 !important;
+    }
+    .stbtn{
+        position: fixed !important;
+        bottom: 24px !important;
+        right: 20px !important;
+    }
+    .white{
+        display: block;
+        width: 100%;
+        height: 80px;
+        background: white;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); 
+
+    }
+    .bbgg{
+        display: block;
+        width: 100%;
+        height: 170px;
+        background-image: url(../images/bg-sidebar-mobile.svg);
+        background-size: cover;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        display: grid;
+        place-items: center;
+    }
+    .sequence{
+        position: fixed;
+        top: 30px;
+        width: 60%;
+        justify-content: space-around;
+        /* margin: 0 auto; */
+    }
+    .sequence p{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid hsl(0, 0%, 100%);
+        text-align: center;
+        margin-bottom: 0 !important;
+        color: white;
+    }
+    #back2 , #back3 , #back4{
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+    }
+    .plan{
+        display: flex;
+        margin-top: 10px;
+        padding: 10px !important;
+    }
+    .plan img {
+        margin-bottom: 0px !important;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 50px !important;
+        
+    }
+    .monthlyparent{
+        display: block !important;
+        /* grid-template-columns: repeat(0 , 1fr) !important; */
+    }
+    .monthlyparent div {
+        padding: 0;
+    }
+    .plan small{
+        margin-left: 10px;
+    }
+  }
